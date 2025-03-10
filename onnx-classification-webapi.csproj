@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>onnx_classification_webapi</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML.OnnxRuntime.DirectML" Version="1.20.1" />
+    <EmbeddedResource Include="Model/label_cn.txt"></EmbeddedResource>
+    <EmbeddedResource Include="Model/label_en.txt"></EmbeddedResource>
+    <EmbeddedResource Include="Model/mobilenetv2-10.onnx"></EmbeddedResource>
+    <PackageReference Include="SkiaSharp" Version="3.116.1" />
+    <PackageReference Include="Collapsenav.Net.Tool" Version="1.4.0.2" />
+  </ItemGroup>
+
+</Project>
